@@ -1,0 +1,137 @@
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.header-wrap,
+.features-wrap,
+.widgets-wrap,
+.screenshots-wrap,
+.reviews-wrap,
+.download-app-wrap,
+.footer-wrap {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow: hidden;
+
+  @media only screen and (max-width: 1200px) {
+    max-width: 1000px;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    max-width: 770px;
+  }
+}
+
+.header-wrap,
+.footer-wrap {
+  @media only screen and (max-width: 770px) {
+    padding: 0;
+  }
+}
+
+.twitter-darker,
+.twitter,
+.instagram-darker,
+.instagram,
+.facebook-darker,
+.facebook {
+  display: inline-block;
+  background: url('../img/social.png') no-repeat;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: left;
+}
+
+.twitter-darker {
+  background-position: -0px -0px;
+  width: 27px;
+  height: 21px;
+
+  &:hover {
+    background-position: -0px -21px;
+  }
+}
+.twitter {
+  background-position: -0px -21px;
+  width: 27px;
+  height: 21px;
+
+  &:hover {
+    background-position: -0px -0px;
+  }
+}
+.instagram-darker {
+  background-position: -0px -42px;
+  width: 26px; height: 26px;
+
+  &:hover {
+    background-position: -0px -68px;
+  }
+}
+.instagram {
+  background-position: -0px -68px;
+  width: 26px;
+  height: 26px;
+
+  &:hover {
+    background-position: -0px -42px;
+  }
+}
+.facebook-darker {
+  background-position: -0px -94px;
+  width: 12px;
+  height: 26px;
+
+  &:hover {
+    background-position: -12px -94px;
+  }
+}
+.facebook {
+  background-position: -12px -94px;
+  width: 12px;
+  height: 26px;
+
+  &:hover {
+    background-position: -0px -94px;
+  }
+}
+
+h2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color:  #648cff;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media only screen and (max-width: 480px) {
+    font-size: 28px;
+  }
+}
+
+h6 {
+  margin: 0px;
+  color:  #999999;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+@import "_scroll-to-top.scss";
+@import "_header.scss";
+@import "_features.scss";
+@import "_widgets.scss";
+@import "_screenshots.scss";
+@import "_reviews.scss";
+@import "_download-app.scss";
+@import "_footer.scss";
+@import "_main-nav-mobile.scss";

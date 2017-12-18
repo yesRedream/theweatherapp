@@ -1,0 +1,34 @@
+.footer {
+  background-color: #353854;
+
+  .footer-wrap {
+    @import "_main-nav.scss";
+    padding-top: 65px;
+    padding-bottom: 100px;
+
+    @media only screen and (max-width: 770px) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    .main-nav-mobile-footer {
+      text-align: center;
+      font-size: 24px;
+      font-weight: 700;
+      text-transform: uppercase;
+      cursor: pointer;
+
+      @media only screen and (min-width: 770px) {
+        display: none;
+      }
+    }
+
+    .red-logo {
+      color: #fc6a42;
+    }
+
+    .blue-logo {
+      color: #648cff;
+    }
+  }
+}

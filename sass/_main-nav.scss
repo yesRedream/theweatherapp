@@ -1,0 +1,43 @@
+.main-nav {
+  padding-top: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  @media only screen and (max-width: 770px) {
+    display: none;
+  }
+
+  .main-logo {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .nav-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 54%;
+  }
+
+  .social-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 13%;
+  }
+
+  font-size: 18px;
+  font-weight: 400;
+
+  a {
+    color: #e1e1e1;
+    text-decoration: none;
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="theme-color" content="#267df4">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Weather App</title>
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="libs/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+	<a href="#home" class="scroll-to-top">
+		<div class="arrow-up"></div>
+	</a>
+	<header class="header" id="home">
+		<div class="header-wrap">
+			<div class="main-nav">
+				<div class="main-logo">Fun weather.</div>
+				<div class="nav-wrap">
+					<a href="#home">Home</a>
+					<a href="#features">Features</a>
+					<a href="#reviews">Reviews</a>
+					<a href="#download">Download</a>
+				</div>
+				<div class="social-wrap">
+					<a href="#" class="facebook"><img src="img/facebook.png" alt="facebook"></a>
+					<a href="#" class="instagram"><img src="img/instagram.png" alt="instagram"></a>
+					<a href="#" class="twitter"><img src="img/twitter.png" alt="twitter"></a>
+				</div>
+			</div>
+
+			<div class="main-nav-mobile">
+				<div class="navigation-wrap">
+					<div class="main-logo-wrap">
+						<div class="menu-btn-wrap" onclick="addClassByClick(this)">
+							<span class="menu-btn"></span>
+							<span class="menu-btn"></span>
+							<span class="menu-btn"></span>
+						</div>
+						<div class="main-logo">Fun weather.</div>
+					</div>
+					<div id="hidden-menu">
+						<div class="nav-wrap">
+							<a href="#home">Home</a>
+							<a href="#features">Features</a>
+							<a href="#reviews">Reviews</a>
+							<a href="#download">Download</a>
+						</div>
+						<div class="social-wrap">
+							<a href="#"><div class="facebook"></div></a>
+							<a href="#"><div class="instagram"></div></a>
+							<a href="#"><div class="twitter"></div></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="header-content">
+				<div class="header-left-content">
+					<h1>Get the most fun weather app</h1>
+					<p>Simple, nice and user-friendly application of the weather. Only userful information</p>
+
+					<a href="#" class="download-button">Download</a>
+					<a href="#" class="features-button">Features</a>
+				</div>
+				<div class="header-right-content">
+					<div class="round-icon weather-round">
+						<p>Sunny</p>
+					</div>
+					<img src="img/phone.png" alt="">
+					<div class="round-wrap">
+						<div class="round-icon temp-round">
+							<p>9&#176;</p>
+						</div>
+						<div class="round-icon city-round">
+							<p>London</p>
+						</div>
+						<div class="round-icon city2-round">
+							<p>Rio</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="#features" class="scroll-down">
+				<div class="arrow-down"></div>
+			</a>
+		</div>
+	</header>
+
+	<section class="features" id="features">
+		<div class="features-wrap">
+			<h2>Perfect features</h2>
+			<h6>Only necessary</h6>
+
+			<div class="features-list">
+				<div class="features-item">
+					<img src="img/usability-icon.png" alt="">
+					<div class="text-wrap">
+						<h4>Usability</h4>
+						<p>Sometimes the simplest things are the hardest to find. So we created a new line for everyday life</p>
+					</div>
+				</div>
+
+				<div class="features-item">
+					<img src="img/parallax-icon.png" alt="">
+					<div class="text-wrap">
+						<h4>Parallax Effect</h4>
+						<p>Sometimes the simplest things are the hardest to find. So we created a new line for everyday life</p>
+					</div>
+				</div>
+
+				<div class="features-item">
+					<img src="img/colors-icon.png" alt="">
+					<div class="text-wrap">
+						<h4>Unlimited Colors</h4>
+						<p>Sometimes the simplest things are the hardest to find. So we created a new line for everyday life</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="widgets">
+		<div class="widgets-wrap">
+			<h2>Simple widgets</h2>
+			<h6>Drag and Drop</h6>
+			<div class="widgets-img">
+				<img src="img/widget-1.png" alt="">
+				<img src="img/widget-2.png" alt="">
+				<img src="img/widget-3.png" alt="">
+			</div>
+		</div>
+	</section>
+
+	<section class="screenshots">
+		<div class="screenshots-wrap">
+			<h2>Screenshots</h2>
+			<h6>The brighest images</h6>
+
+			<div class="screenshot">
+				<div class="cloudy-wrap">
+					<div class="round-icon temp">
+						<p>15&#176;</p>
+					</div>
+					<img src="img/screen-1.png" alt="screen-1">
+					<div class="round-icon weather">
+						<p>Cloudy</p>
+					</div>
+				</div>
+				<div class="text-section">
+					<img src="img/cloudy-icon.png" alt="cloudy-icon">
+					<h2>When the clouds</h2>
+					<p>Variable information on the air himidity, the feeling of the weather, and the ability to share this with your friends</p>
+					<div class="round-icons-wrap">
+						<div class="round-icon per">
+							<p>95%</p>
+						</div>
+						<div class="round-icon temp">
+							<p>9&#176;</p>
+						</div>
+						<div class="round-icon weather">
+							<p>Rainy</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="screenshot">
+				<div class="text-section">
+					<img src="img/sunny-icon.png" alt="sunny-icon">
+					<h2>When the sun</h2>
+					<p>Variable information on the air himidity, the feeling of the weather, and the ability to share this with your friends</p>
+					<div class="round-icons-wrap">
+						<div class="round-icon per">
+							<p>95%</p>
+						</div>
+						<div class="round-icon temp">
+							<p>9&#176;</p>
+						</div>
+						<div class="round-icon weather">
+							<p>Rainy</p>
+						</div>
+					</div>
+				</div>
+				<div class="sunny-wrap">
+					<div class="round-icon temp">
+						<p>35&#176;</p>
+					</div>
+					<img src="img/screen-2.png" alt="screen-2">
+					<div class="round-icon weather">
+						<p>Sunny</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="screenshot">
+				<div class="rainy-wrap">
+					<div class="round-icon temp">
+						<p>9&#176;</p>
+					</div>
+					<img src="img/screen-3.png" alt="screen-3">
+					<div class="round-icon weather">
+						<p>Rainy</p>
+					</div>
+				</div>
+				<div class="text-section">
+					<img src="img/rainy-icon.png" alt="rainy-icon">
+					<h2>When the clouds</h2>
+					<p>Variable information on the air himidity, the feeling of the weather, and the ability to share this with your friends</p>
+					<div class="round-icons-wrap">
+						<div class="round-icon per">
+							<p>95%</p>
+						</div>
+						<div class="round-icon temp">
+							<p>9&#176;</p>
+						</div>
+						<div class="round-icon weather">
+							<p>Rainy</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="reviews" id="reviews">
+		<div class="reviews-wrap">
+			<h2>What people are saying</h2>
+			<h6>Reviews</h6>
+			<div class="review-wrap">
+				<div class="review">
+					<p class="comma">“</p>
+					<p>What art offers is space - a certain breathing room for the spirit.</p>
+					<h6>John Updlike</h6>
+					<p class="comma-2">“</p>
+				</div>
+
+				<div class="review">
+					<p class="comma">“</p>
+					<p>We do not see nature with our eyes, but with our understandings and our hearts.</p>
+					<h6>William Hazlitt</h6>
+					<p class="comma-2">“</p>
+				</div>
+
+				<div class="review">
+					<p class="comma">“</p>
+					<p>The only courage that matters is the kind that gets you from one moment to the next.</p>
+					<h6>Mignon McLaughlin</h6>
+					<p class="comma-2">“</p>
+				</div>
+
+				<div class="review">
+					<p class="comma">“</p>
+					<p>No man has a good enough memory to be a successful liar.</p>
+					<h6>Abraham Lincoln</h6>
+					<p class="comma-2">“</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="download-app" id="download">
+		<div class="download-app-wrap">
+			<div class="download-links-wrap">
+				<h2>How download the app?</h2>
+				<h6>Just download the app from the store.
+						Simple, nice and user-friendly application of theweather.
+						Only relevant and userful information.
+				</h6>
+				<a href="#"><img src="img/appstore.png" alt="appstore"></a>
+				<a href="#"><img src="img/google-play.png" alt="google-play"></a>
+			</div>
+			<div class="download-images-wrap">
+				<img src="img/appdownload1.png" alt="">
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="footer-wrap">
+			<div class="main-nav">
+				<a href="#" class="main-logo"><span class="red-logo">Fun</span> <span class="blue-logo">weather.</span></a>
+				<a href="#home">Home</a>
+				<a href="#features">Features</a>
+				<a href="#reviews">Reviews</a>
+				<a href="#download">Download</a>
+				<div class="social-wrap">
+					<a href="#" class="facebook"><img src="img/facebook-darker.png" alt="facebook"></a>
+					<a href="#" class="instagram"><img src="img/instagram-darker.png" alt="instagram"></a>
+					<a href="#" class="twitter"><img src="img/twitter-darker.png" alt="twitter"></a>
+				</div>
+			</div>
+			<div class="main-nav-mobile-footer">
+				<p href="#" class="main-logo"><span class="red-logo">Fun</span> <span class="blue-logo">weather.</span></p>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="libs/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+	</script>
+</body>
+</html>

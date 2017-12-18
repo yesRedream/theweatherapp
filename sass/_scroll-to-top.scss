@@ -1,0 +1,23 @@
+.scroll-to-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  cursor: pointer;
+  bottom: 20px;
+  right: 20px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgba(176, 176, 176, 0.3);
+
+  .arrow-up {
+    display: block;
+    width: 6px;
+    height: 6px;
+    border: 1px solid #ff4a4f;
+    border-top: none;
+    border-left: none;
+    transform: rotate(-135deg);
+  }
+}
